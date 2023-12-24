@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Treasure</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Style.css">
+    <!-- This page is where I ended up trying to retro fit the form and table, because I really couldn't think of anything else to do on the 
+    project that involved them. I really enjoyed making the table, it turned out right the first try! Yay! The form, I have been fighting for the last day
+    and a half trying to get the left side to line up. I lost that battle, I would love some feedback on how to fix that. I did have some fun, and 
+    some laughs trying to figure it out on my own. I waited too long though to get help, hard lesson. Last thing, I cannot for the life of me get the git ignore
+    file to actually ignore the node modules...not sure what I am doing wrong. First day I made it, node modules turned a light gray after I added it to the file.
+    I saved everything before shutting down and now its bright white again and it is now time to turn in the project. Feedback on what the heck I did there
+    would be nice too please.
+   -->
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary px-0 py-0">
+        <div class="container-fluid navbar-dark bg-primary">
+          <a class="navbar-brand">Treasure Valley Christmas</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Boise_lights.html">Boise</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Caldwell_lights.html">Caldwell</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Eagle_lights.html">Eagle</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Kuna_lights.html">Kuna</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Meridian_lights.html">Meridian</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Nampa_lights.html">Nampa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Submissions.html">Submissions</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+    </nav>
+    <div class="container-fluid m-3" >
+      <h1>Welcome!</h1>
+      <text>If you have an event you would like to have featured on our site, or if you would like your neighborhood to be considered for your cities bus tour, please fill out the form below and it will be reviewed for the next Friday update. Thank you and happy holidays! </text>
+    </div>
+    <form>
+      <div class="container-fluid">
+        <div class="form-row">
+          <div class="col-4">
+            <input type="text" class="form-control" placeholder="First name">
+          </div>
+          <div class="col-4">
+            <input type="text" class="form-control" placeholder="Last name">
+          </div>
+        </div>
+      </div>  
+    
+      <div class="container-fluid">  
+        <div class="form-row">
+          <div class="form-group col-md-6">
+          <label for="inputAddress">Event or Display Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="123 Main St">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputAddress2">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+      </div>
+      <div class="container-fluid"> 
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputState">City</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>Boise</option>
+              <option>Caldwell</option>
+              <option>Eagle</option>
+              <option>Kuna</option>
+              <option>Meridian</option>
+              <option>Nampa</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>Idaho</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              I understand that I may be contacted for more information. By adding my address or event, I take on the responsibility of social traffic it may generate. I understand there is no direct monetary benefit for adding my home or event to this website.
+            </label>
+          </div>
+        </div>
+      </div>  
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Please tell us about your event, or your light display.</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>      
+    </form>
+    <div class="container-fluid m-3">
+    <p> Any questions, comments, concerns about an activity listed on this website can be directed toward the individual city chamber of commerce.</p>
+    </div>
+    <div class="container-fluid m-3">
+      <table class="table table-info tale-striped table-hover table-bordered border-dark">
+        <thead>
+          <tr>            
+            <th scope="col">City</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>            
+            <td>Boise</td>
+            <td>info@boisechamber.org</td>
+            <td>208-472-5205</td>
+          </tr>
+          <tr>            
+            <td>Caldwell</td>
+            <td>visitors@caldwellchambernc.com</td>
+            <td>(828) 726-0616</td>
+          </tr>
+          <tr>            
+            <td>Eagle</td>
+            <td>info@eaglechamber.com</td>
+            <td>(208) 939-4222</td>
+          </tr>
+          <tr>            
+            <td>Kuna</td>
+            <td>information@kunachamber.com</td>
+            <td>(208) 922-9254</td>
+          </tr>
+          <tr>            
+            <td>Meridian</td>
+            <td>info@meridianchamber.org</td>
+            <td>(208) 888-2817</td>
+          </tr>
+          <tr>            
+            <td>Nampa</td>
+            <td>nampachamberofcommerce@nampa.com</td>
+            <td>(208) 466-4641</td>
+          </tr>
+    </div>
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+<!--custom javascript goes here. -->
+</body>
+</html>                       
+
+
+
+

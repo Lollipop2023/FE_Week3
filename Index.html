@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Valley Christmas</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Style.css">
+    <!-- First, I bit off more than I could chew for the week really. So the outcome isn't as pretty as I would 
+    have hoped. Missing a lot of detail work, and a couple elements and I had fights for supremacy at the last minute
+    and I lost. 
+    My project was to try and realistically make a site for holiday activities that people would have a quick reference
+    for our entire valley. This is intended to just be an informative page that links to the individual city pages or the 
+    event page online. Personally, I wanted to try and approach this as an actual job so I could get an idea of my time constraints
+    and skills. Turns out I underestimated by at least two days I would guess. Great lesson for me! So, without further adieu...
+    I wanted the home page to stand out from the others, so I sized the cards differently than on the city pages.
+    I did try to keep the navbar the same throughout all pages for visual consistency. I also used cards for all the 
+    events across the project. Just linking everything so that you can get to a new page in multiple places was more time consuming than I 
+    imagined. Finally had to deal with having to double check myself that I included everything on EVERY page. I did my best 
+    to use only bootstrap for my components, I did have to add one CSS command of my own to get the result I wanted. I imagine
+    if I had more time to tweak things, I would have had a full page by the time I was done. Bootstrap made it pretty simple
+    to get close to what I wanted, I am really excited to continue experimenting because there were so many options!
+    My biggest issue still remaining is mostly in my photos, trying to get everything evenly sized and in focus will take 
+    some practice for sure. All my city pages essentially are the same. I did allow for some open space, just visually
+    to show that events could be added or subtracted along the way, just know that was intentional and not an absolute oversight.
+    Thats about it for most of the pages. Only other notes will be on submissions page. -->
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary px-0 py-0">
+    <div class="container-fluid navbar-dark bg-primary">
+      <a class="navbar-brand">Treasure Valley Christmas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Submissions.html">Submissions</a>
+          </li>
+        </ul>
+       </div>
+    </div>
+</nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="card mb-3">
+            <img src="Images_lights/Boise.jpg" class="card-img-top" alt="Boise">
+            <div class="card-body">
+              <a  href="Boise_lights.html" class="btn btn-primary stretched-link">Boise</a>
+              <p class="card-text">Idaho's capitol city is decked out in lights to keep it merry and bright.</p>                
+            </div>
+          </div>
+        </div>  
+        <div class="col">
+          <div class="card mb-3">
+            <img src="Images_lights/Caldwell.jpg" class="card-img-top" alt="Caldwell">
+            <div class="card-body">
+              <a  href="Caldwell_lights.html" class="btn btn-primary stretched-link">Caldwell</a>
+              <p class="card-text">This city chamber of commerce brings an unbeatable jolly vibe to all who visit.</p>                
+            </div>
+          </div>
+        </div>
+    </div>    
+        <div class="row">
+          <div class="col">
+            <div class="card mb-3">
+              <img src="Images_lights/Eagle.jpg" class="card-img-top" alt="Eagle">
+              <div class="card-body">
+                <a  href="Eagle_lights.html" class="btn btn-primary stretched-link">Eagle</a>
+                <p class="card-text">Classical decorations reminiscent of European holiday elegance.</p>                
+              </div>
+            </div>
+          </div>  
+          <div class="col">
+            <div class="card mb-3">
+              <img src="Images_lights/Kuna.jpg" class="card-img-top" alt="Kuna">
+              <div class="card-body">
+                <a  href="Kuna_lights.html" class="btn btn-primary stretched-link">Kuna</a>
+                <p class="card-text">This up and coming community has put a bright foot forward welcoming everyone to the neighborhood.</p>                
+              </div>
+            </div>
+          </div>
+      </div>  
+      <div class="row">
+        <div class="col">
+          <div class="card mb-3">
+            <img src="Images_lights/Meridian.jpg" class="card-img-top" alt="Meridian">
+            <div class="card-body">
+              <a  href="Meridian_lights.html" class="btn btn-primary stretched-link">Meridian</a>
+              <p class="card-text">The city at the valley's center takes great care putting in the fine details</p>            
+            </div>
+          </div>
+        </div>  
+        <div class="col">
+          <div class="card mb-3">
+            <img src="Images_lights/Nampa.jpg" class="card-img-top" alt="Nampa">
+            <div class="card-body">
+              <a  href="Nampa_lights.html" class="btn btn-primary stretched-link">Nampa</a>
+              <p class="card-text">Nampa keeps off Santa's naughty list with fun events for the whole family</p>              
+            </div>
+          </div>
+        </div>
+    </div>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+<!--custom javascript goes here. -->
+</body>
+</html>
+
